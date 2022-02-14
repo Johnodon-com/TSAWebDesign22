@@ -1,23 +1,79 @@
-body {
-  background-color: #000000;
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
 }
 
-hr {
-  border-style: none;
-  border-top-style: dotted;
-  border-color: grey;
-  border-width: 5px;
-  width: 5%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-h1 {
-  color: #66BFBF;
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-h3 {
-  color: #66BFBF;
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
 }
 
-img:hover {
-  background-color: gold;
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme('borderColor.DEFAULT', currentColor);
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background-color: #ffffff;
+  padding-top: 3rem;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(59, 130, 246);
+  font-family: sans-serif;
+}
+
+.navlink a {
+  margin-left: 4rem;
+  font-family: sans-serif;
+  color: #000000;
+  text-decoration: none;
 }
