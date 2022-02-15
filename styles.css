@@ -65,8 +65,8 @@ button:focus {
   width: 100%;
   display: flex;
   padding: 10px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   justify-content: space-around;
   background-color: rgba(255,255,255,.2);
 }
@@ -133,6 +133,13 @@ button:focus {
   margin-left: 1rem;
   margin-top: 30px;
   display: inline-block;
+  -webkit-transition: background-color 1000ms ease-in-out;
+  -ms-transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #008600;
 }
 
 .about {
@@ -150,8 +157,35 @@ button:focus {
   background-color: rgba(0,0,0,.5);
   padding-top: 50px;  
   padding-bottom: 50px;
-  width: 25%;
+  width: 75%;
   padding-left: 100px;
   padding-right: 100px;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 1000ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.about-us:hover {
+  background-color: rgba(255,255,255,.8);
+  color: #000000;
+}
+
+.about-us h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.about-text {
+  float:right;
+}
+
+.about-img {
+  float: left;
+  width: 20%;
+  padding-right: 50px;
 }
