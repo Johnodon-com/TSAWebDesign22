@@ -76,6 +76,14 @@ button:focus {
   font-weight: 600;
   color: rgb(59, 130, 246);
   font-family: sans-serif;
+  -webkit-transition: all 1000ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.logo:hover {
+  cursor: default;
+  color: rgb(246, 243, 59);
 }
 
 .navlink a {
@@ -86,6 +94,9 @@ button:focus {
   color: #555555;
   text-decoration: none;
   font-size: 1.5rem;
+  -webkit-transition: all 1000ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .navlink a:hover {
@@ -133,9 +144,9 @@ button:focus {
   margin-left: 1rem;
   margin-top: 30px;
   display: inline-block;
-  -webkit-transition: background-color 1000ms ease-in-out;
-  -ms-transition: background-color 500ms ease-in-out;
-  transition: background-color 500ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .button:hover {
@@ -188,4 +199,13 @@ button:focus {
   float: left;
   width: 20%;
   padding-right: 50px;
+}
+
+.copyright li{
+  color: #ffffff;
+  font-size: 1rem;
+}
+.copyright a {
+  color: #0099ff;
+  text-decoration: none;
 }
