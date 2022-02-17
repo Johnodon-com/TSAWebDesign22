@@ -132,7 +132,7 @@ button:focus {
   color: #ffffff;
   font-family: sans-serif;
   text-align: center;
-
+  height: auto;
 }
 
 .buttons {
@@ -248,9 +248,24 @@ table {
   border-spacing: 15px;
   border: rgba(69,69,69,1) solid 1px;
   border-radius: 15px;
-  margin-top: 50px;
 }
 
+@media screen and (max-width: 1000px) {
+  .about-img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav {
+    justify-content: center;
+    text-align: center;
+  }
+  .navlink a {
+    padding: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 @media screen and (max-width: 500px) {
   table {
     width: 100%;
@@ -274,13 +289,5 @@ table {
   .logo {
     display: none;
   }
-  .navlink a {
-    padding: 0px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .nav {
-    justify-content: center;
-    text-align: center;
-  }
 }
+  
