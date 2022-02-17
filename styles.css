@@ -59,6 +59,7 @@ button:focus {
 * {
   padding: 0;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .nav {
@@ -131,6 +132,7 @@ button:focus {
   color: #ffffff;
   font-family: sans-serif;
   text-align: center;
+
 }
 
 .buttons {
@@ -152,6 +154,27 @@ button:focus {
 
 .button:hover {
   background-color: #008600;
+}
+
+.button-order {
+  color:#ffffff;
+  background-color: #1100ff;
+  font-family: sans-serif;
+  padding: 8px;
+  margin: 7px;
+  margin-left: 1rem;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  -webkit-transition: all 1000ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+}
+
+.button-order:hover {
+  background-color: #EEFF00;
+  color: #000000;
 }
 
 .about {
@@ -212,7 +235,26 @@ button:focus {
   text-decoration: none;
 }
 
+table, th, td {
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+table {
+  background-color: rgba(255,255,255,.05);
+  width: 85%;
+  height: 15%;
+  border-spacing: 15px;
+  border: rgba(69,69,69,1) solid 1px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
   .about-img {
     visibility: hidden;
     display: none;
